@@ -1,6 +1,6 @@
 document.getElementById("form").addEventListener("submit", function (event) {
   const status = document.getElementById("status");
-  status.innerHTML = "Hey";
+  status.innerHTML = "Fetching Answer";
   const numOne = parseInt(document.getElementById("num-one").value);
   const numTwo = parseInt(document.getElementById("num-two").value);
 
