@@ -1,0 +1,18 @@
+body {
+  height: 100vh;
+  background: #d7dbdd;
+}
+
+#status,
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+#status {
+  font-size: 20px;
+}
