@@ -9,7 +9,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
     numTwo,
   };
 
-  fetch("https://calm-sea-7686.jkaram.workers.dev/", {
+  fetch("https://calm-sea-7686.jkaram.workers.dev", {
     method: "POST",
     body: JSON.stringify(data),
   })
