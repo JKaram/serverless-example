@@ -1,8 +1,6 @@
-window.onload = function () {
-  console.log("Hey");
-};
-
 document.getElementById("form").addEventListener("submit", function (event) {
+  const status = document.getElementById("status");
+  status.innerHTML = "Hey";
   const numOne = parseInt(document.getElementById("num-one").value);
   const numTwo = parseInt(document.getElementById("num-two").value);
 
@@ -13,14 +11,10 @@ document.getElementById("form").addEventListener("submit", function (event) {
 
   fetch("https://calm-sea-7686.jkaram.workers.dev/", {
     method: "POST",
-    mode: "no-cors",
-    headers: {
-      "Content-Type": "application/json",
-    },
     body: JSON.stringify(data),
   })
-    .then((response) => console.log(response))
-    .then((data) => console.log(data));
+    .then((response) => response.json())
+    .then((data) => (status.innerHTML = data.total));
 
   event.preventDefault();
 });
