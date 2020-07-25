@@ -3,6 +3,7 @@ body {
   background: #d7dbdd;
 }
 
+label,
 #status,
 h1 {
   text-align: center;
@@ -11,6 +12,11 @@ h1 {
 form {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  max-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+
 }
 
 #status {
